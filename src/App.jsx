@@ -8,6 +8,7 @@ import PostStory from './views/PostStory';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setStories } from './store/storiesSlice';
+import EditStory from './views/EditStory';
 
 function App() {
   const dispatch = useDispatch();
@@ -41,6 +42,7 @@ function App() {
           <Route path='flow' element={<Flow /> } />
           <Route path='story/:id' element={<Story /> } />
           <Route path='post-story' element={<PostStory /> } />
+          <Route path='edit-story' element={<EditStory /> } />
         </Route>
       </Routes>
     </BrowserRouter>
