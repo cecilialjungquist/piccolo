@@ -6,8 +6,13 @@ export const postsSlice = createSlice ({
     name: 'posts',
     initialState,
     reducers: {
-        // All hantering här
+        setStories: (state, action) => {
+            console.log('Adding stories', action.payload)
+            return action.payload;
+        }
     }
 });
+
+export const { setStories } = postsSlice.actions;
 
 export default postsSlice.reducer;

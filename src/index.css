@@ -6,3 +6,50 @@
   list-style: none;
 }
 
+:root {
+
+}
+
+body {
+  background-color: rgb(41, 41, 41);
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#root > * {
+  padding: 1rem 1rem 0;
+}
+
+a {
+  color: inherit;
+}
+a:hover,
+.active {
+  opacity: .5;
+}
+
+h1, h2 {
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 140%;
+  letter-spacing: .5px;
+  color: whitesmoke;
+}

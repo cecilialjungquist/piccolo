@@ -3,7 +3,7 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 function Layout() {
     return (  
         <>
-            <header>
+            <header className="layout-header">
                 <aside>
                     <Link to='/'>
                         Logo
@@ -12,13 +12,16 @@ function Layout() {
                 <nav>
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='flow'>Flow</NavLink>
-                    <NavLink to='post-story'>PostStory</NavLink>
-
-                    {/* <NavLink to='login'>Account</NavLink> */}
+                    <NavLink to='login'>Account</NavLink>
+                    <NavLink to='post-story'>Post Story</NavLink>
                 </nav>
             </header>
-
-            <Outlet/>
+            <main>
+                <Outlet/>
+            </main>
+            <footer>
+                This is a footer
+            </footer>
         </>
     );
 }
