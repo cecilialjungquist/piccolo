@@ -8,7 +8,7 @@ import PostStory from './views/PostStory';
 import Login from './views/Login';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { setStories } from './store/postsSlice';
+import { setStories } from './store/storiesSlice';
 
 function App() {
   const dispatch = useDispatch();
@@ -20,7 +20,7 @@ function App() {
 
         if (response.status === 200) {
           const data = await response.json();
-          dispatch(setStories(data));
+          dispatch(setStories(data.stories));
         } else {
           throw new Error('Could not fetch data.');
         }

@@ -1,6 +1,13 @@
+import { nanoid } from "@reduxjs/toolkit";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import StoryCard from "../Components/StoryCard";
 
 function Home() {
+    const stories = useSelector(state => state.stories);
+    console.log(stories);
+    // const storyCards = stories.map(story => <StoryCard story={story} key={nanoid()} />)
+
     return (
         <section className="home">
             <section className="hero">
@@ -21,7 +28,7 @@ function Home() {
             </section>
 
             <section className="cardstack">
-                
+
             </section>
         </section>
     );
