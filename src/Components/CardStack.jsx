@@ -1,5 +1,6 @@
 import { nanoid } from "@reduxjs/toolkit";
 import { useSelector } from "react-redux";
+import './CardStack.css';
 import StoryCard from "./StoryCard";
 import Loading from './Loading';
 
@@ -12,7 +13,7 @@ function CardStack() {
     }
 
     return (  
-        <section className="cardstack">
+        <section className="card-stack">
             {storyCards ? storyCards : <Loading />}
         </section>
     );

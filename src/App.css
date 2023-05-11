@@ -32,10 +32,11 @@
     background-position: center;
     min-height: 90vh;  
     display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-columns: 6vw auto 6vw;
+
     grid-template-rows: 1fr 1fr;
     position: relative;
+    text-align: center;
 }
 
 /* Creates dark shade on background img */
@@ -48,16 +49,17 @@
 }
 
 .home .hero .top {
-    grid-column: 2 / span 1;
+    /* grid-column: 2 / span 1; */
+    grid-column: 2 / auto;
     align-self: flex-end;
     z-index: 1;
 }
 .home .hero p {
-    margin-top: 1rem;
+    margin: 1rem auto;
 }
 
 .home .hero .bottom {
-    grid-column: 3 / auto;
+    grid-column: 2 / auto;
     grid-row: 2 / auto;
     text-align: center;
     align-self: center;
@@ -66,4 +68,54 @@
     display: flex;
     gap: 2rem;
     justify-content: flex-end;
+}
+
+/* -.-.-.-.-.- STORY -.-.-.-.-.- */
+
+.story {
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    text-align: center;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.story section {
+    max-width: 400px;
+}
+.story .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.story .img img {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.story p span {
+    color: rgb(74, 200, 126);
+}
+
+@media screen and (min-width: 900px) {
+    .home .hero {
+        grid-template-columns: 1fr 3fr 3fr 1fr;
+        gap: 2rem;
+        text-align: left;
+    }
+    .home .hero .top {
+        grid-column: 2 / span 1;
+    }
+    .home .hero .bottom {
+        grid-column: 3 / auto;
+        grid-row: 2 / auto;
+    }
+    
+    .story {
+        text-align: left;
+    }
 }
