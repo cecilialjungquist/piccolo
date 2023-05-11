@@ -61,3 +61,8 @@ p {
   color: whitesmoke;
   max-width: 500px;
 }
+
+button {
+  appearance: none;
+  border: none;
+}

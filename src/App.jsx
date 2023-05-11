@@ -5,7 +5,6 @@ import Home from './views/Home';
 import Flow from './views/Flow';
 import Story from './views/Story';
 import PostStory from './views/PostStory';
-import Login from './views/Login';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setStories } from './store/storiesSlice';
@@ -41,7 +40,6 @@ function App() {
           <Route index element={<Home />} />
           <Route path='flow' element={<Flow /> } />
           <Route path='story/:id' element={<Story /> } />
-          <Route path='login' element={<Login /> } />
           <Route path='post-story' element={<PostStory /> } />
         </Route>
       </Routes>

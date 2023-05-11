@@ -12,7 +12,6 @@ function Layout() {
                 <nav>
                     <NavLink to='/'>Home</NavLink>
                     <NavLink to='flow'>Flow</NavLink>
-                    <NavLink to='login'>Account</NavLink>
                     <NavLink to='post-story'>Post Story</NavLink>
                 </nav>
             </header>

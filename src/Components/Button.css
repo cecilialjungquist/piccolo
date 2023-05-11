@@ -1,0 +1,9 @@
+.primary,
+.edit {
+    padding: .5rem 1rem;
+    border-radius: 6px;
+}
+
+.edit {
+    align-self: flex-end;
+}
