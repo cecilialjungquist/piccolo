@@ -7,7 +7,7 @@ function Login() {
 
     useEffect(() => {
         setTimeout(() => {
-            navigate('home')
+            navigate('/home')
         }, 2000)
     }, [])
 

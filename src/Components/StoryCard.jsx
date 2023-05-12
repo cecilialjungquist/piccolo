@@ -11,7 +11,7 @@ function StoryCard({ story }) {
     const desc = story.story.slice(0, 80);
 
     function handleClick() {
-        navigate(`story/${story.id}`);
+        navigate(`/story/${story.id}`);
     }
 
     return (

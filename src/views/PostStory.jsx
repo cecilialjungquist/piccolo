@@ -32,7 +32,7 @@ function PostStory() {
     function handleSave() {
         if (newStory.title && newStory.story.length > 150 && status === "valid") {
             dispatch(postStory(newStory));
-            navigate('/');
+            navigate('/home');
         } else {
             setShowMessage(true);
         }
