@@ -101,3 +101,14 @@ textarea {
   max-width: 700px;
   min-height: 200px;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer p {
+  padding: 2rem;
+  font-size: .9rem;
+  opacity: .6;
+  font-style: italic;
+}

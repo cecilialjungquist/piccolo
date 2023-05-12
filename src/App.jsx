@@ -44,7 +44,7 @@ function App() {
         <Outlet />
       </main>
       <footer>
-        This is a footer
+        <p> made by <a href="https://www.linkedin.com/in/cecilia-ljungquist/"> cecilialjungquist</a> maj 2023</p>
       </footer>
     </>
   )
