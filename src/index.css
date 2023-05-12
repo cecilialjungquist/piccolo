@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(204, 204, 204);
 }
 
 :root {
+  --heading-font: 'Open Sans', sans-serif;
+  --regular-font:  Georgia, 'Times New Roman', Times, serif;
 
+  --background-dark: rgb(34, 34, 34);
+  --accent-green: rgba(104, 195, 73, 0.631);
+  --accent-white: rgb(204, 204, 204);
 }
 
 body {
@@ -35,7 +44,7 @@ a:hover,
 
 h1, h2 {
   font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--heading-font);
   line-height: 140%;
   text-transform: uppercase;
   color: whitesmoke;
@@ -48,18 +57,21 @@ h2 {
 }
 
 h3 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: rgb(225, 225, 225);
+  letter-spacing: 1px;
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.584);
   font-weight: normal;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 140%;
   letter-spacing: .5px;
-  color: whitesmoke;
   max-width: 500px;
+}
+
+p span {
+  font-family: var(--heading-font);
+  font-style: italic;
+  color: var(--accent-green)
 }
 
 p.message {
@@ -72,6 +84,9 @@ p.message {
 button {
   appearance: none;
   border: none;
+  color: var(--accent-green);
+  background-color: var(--background-dark);
+  border: 1px solid var(--accent-white);
 }
 
 input,
@@ -79,12 +94,13 @@ textarea {
   appearance: none;
   border: none;
   border-radius: 6px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: var(--regular-font);
   margin: 1rem 0;
   display: block;
   resize: none;
   padding: 6px;
   padding-inline-start: .8rem;
+  color: var(--background-dark);
 }
 
 input {

@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: whitesmoke;
+    font-family: var(--regular-font);
 }
 
 .layout-header nav {
@@ -14,7 +13,7 @@
 
 .layout-header nav a:last-child {
     margin-left: 3rem;
-    border: 1px solid white;
+    border: 1px solid var(--accent-white);
     padding: .5rem 1rem;
     border-radius: 6px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
@@ -35,11 +34,6 @@
 }
 
 /* -.-.-.-.-.- HOME -.-.-.-.-.- */
-
-.home {
-    /* background-image: url(/adam-vradenburg-sWAAhaoVuko-unsplash.jpg);
-    background-position: center; */
-}
 
 .home .hero {
     background-image: url(/adam-vradenburg-sWAAhaoVuko-unsplash.jpg);
@@ -63,7 +57,6 @@
 }
 
 .home .hero .top {
-    /* grid-column: 2 / span 1; */
     grid-column: 2 / auto;
     align-self: flex-end;
     z-index: 1;
@@ -109,10 +102,6 @@
     width: 100%;
 }
 
-.story p span {
-    color: rgb(74, 200, 126);
-}
-
 /* -.-.-.-.-.- EDIT STORY -.-.-.-.-.- */
 
 .edit-story {
@@ -130,6 +119,17 @@
     min-height: 80vh;
     margin: auto;
     max-width: 700px;
+}
+
+/* -.-.-.-.-.- FLOW -.-.-.-.-.- */
+
+.flow .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
 /* -.-.-.-.-.- ERROR -.-.-.-.-.- */

@@ -15,9 +15,8 @@
     position: absolute;
     right: 1rem;
     top: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--heading-font);
     color: rgba(113, 244, 130, 0.707);
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.318);
 }
 
 .story-card * {
