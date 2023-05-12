@@ -1,9 +1,11 @@
 import './Login.css';
+import loadingGIF from '/public/loading.gif';
 
 function Login() {
     return ( 
         <section className="login">
-            <h2>Loggin in...</h2>
+            <img src={loadingGIF} />
+            <h2>Signing in...</h2>
         </section>
     );
 }

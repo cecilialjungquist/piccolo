@@ -1,5 +1,11 @@
 .login {
-    height: 100vh;
-    width: 100vw;
     overflow: hidden;
+    position: absolute;
+    inset: 0;
+    background-image: url(/public/adam-vradenburg-sWAAhaoVuko-unsplash.jpg);
+    background-position: center;
+
+    display: grid;
+    place-content: center;
+    text-align: center;
 }
