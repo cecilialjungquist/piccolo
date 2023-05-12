@@ -1,8 +1,9 @@
 Fixa:
 
-* Edit story 
+* Edit story - check
 * Gör input till komponent?
-* Add new
-* Delete
+* Add new - check
+* Delete - check
 
 * Fixa buggar
+* Navigera till Flow vid svae new post
