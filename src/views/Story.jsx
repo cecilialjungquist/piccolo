@@ -13,7 +13,7 @@ function Story() {
 
     let story;
     if (stories.length > 0) {
-        [story] = stories.filter(story => story.id === id);
+        [ story ] = stories.filter(story => story.id === id);
         console.log(story);
     }
 
