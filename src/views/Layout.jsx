@@ -5,14 +5,14 @@ function Layout() {
         <>
             <header className="layout-header">
                 <aside>
-                    <Link to='/'>
+                    <Link to='/home'>
                         Logo
                     </Link>
                 </aside>
                 <nav>
-                    <NavLink to='/'>Home</NavLink>
-                    <NavLink to='flow'>Flow</NavLink>
-                    <NavLink to='post-story'>Post Story</NavLink>
+                    <NavLink to='/home'>Home</NavLink>
+                    <NavLink to='/flow'>Flow</NavLink>
+                    <NavLink to='/post-story'>Post Story</NavLink>
                 </nav>
             </header>
             <main>

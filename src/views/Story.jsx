@@ -15,14 +15,14 @@ function Story() {
     if (stories.length > 0) {
         [story] = stories.filter(story => story.id === id);
         console.log(story);
-
-        useEffect(() => {
-            if (story.username === "kyle__") {
-                setCanEdit(true);
-                console.log('can edit')
-            }
-        }, [])
     }
+
+    useEffect(() => {
+        if (story && story.username === "kyle__") {
+            setCanEdit(true);
+            console.log('can edit')
+        }
+    }, [])
 
     return (
         <>

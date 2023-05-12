@@ -1,7 +1,16 @@
-import './Login.css';
+import { useEffect } from 'react';
 import loadingGIF from '/public/loading.gif';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        setTimeout(() => {
+            navigate('/home')
+        }, 2000)
+    }, [])
+
     return ( 
         <section className="login">
             <img src={loadingGIF} />

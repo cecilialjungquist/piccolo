@@ -26,7 +26,7 @@ function EditStory() {
     }
     function handleDelete() {
         dispatch(deleteStory(story));
-        navigate('/');
+        navigate(-2);
     }
 
     return (  
