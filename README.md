@@ -7,3 +7,4 @@ Fixa:
 
 * Fixa buggar
 * Navigera till Flow vid svae new post
+* Gör en splash screen
