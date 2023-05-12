@@ -1,15 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Layout from './views/Layout';
-import Home from './views/Home';
-import Flow from './views/Flow';
-import Story from './views/Story';
-import PostStory from './views/PostStory';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setStories } from './store/storiesSlice';
-import EditStory from './views/EditStory';
-import Login from './views/Login';
+import { Link, NavLink, Outlet } from "react-router-dom";
+// import EditStory from './views/EditStory';
+// import Login from './views/Login';
 
 function App() {
   const dispatch = useDispatch();
@@ -36,18 +31,26 @@ function App() {
 
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Login />} />
-          <Route path='home' element={<Home />} />
-          <Route path='flow' element={<Flow />} />
-          <Route path='story/:id' element={<Story />} />
-          <Route path='post-story' element={<PostStory />} />
-          <Route path='edit-story' element={<EditStory />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <header className="layout-header">
+        <aside>
+          <Link to='/home'>
+            Logo
+          </Link>
+        </aside>
+        <nav>
+          <NavLink to='/home'>Home</NavLink>
+          <NavLink to='/flow'>Flow</NavLink>
+          <NavLink to='/post-story'>Post Story</NavLink>
+        </nav>
+      </header>
+      <main>
+        <Outlet />
+      </main>
+      <footer>
+        This is a footer
+      </footer>
+    </>
   )
 }
 
