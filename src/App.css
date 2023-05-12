@@ -77,7 +77,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 3vw;
     text-align: center;
     position: relative;
@@ -98,6 +97,17 @@
 
 .story p span {
     color: rgb(74, 200, 126);
+}
+
+/* -.-.-.-.-.- EDIT STORY -.-.-.-.-.- */
+
+.edit-story {
+    min-height: 80vh;
+    margin: auto;
+    max-width: 700px;
+}
+.edit-story button {
+    margin-right: 1rem;
 }
 
 @media screen and (min-width: 900px) {

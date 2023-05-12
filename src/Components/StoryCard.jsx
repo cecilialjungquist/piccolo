@@ -16,6 +16,7 @@ function StoryCard({ story }) {
 
     return (
         <article className="story-card" style={styles} onClick={handleClick}>
+            <aside>@{story.username}</aside>
             <h3>{story.title}</h3>
             <p>{desc}...</p>
         </article>

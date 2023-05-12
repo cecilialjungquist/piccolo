@@ -1,6 +1,7 @@
 .primary,
 .edit,
-.save {
+.save,
+.delete {
     padding: .5rem 1rem;
     border-radius: 6px;
 }

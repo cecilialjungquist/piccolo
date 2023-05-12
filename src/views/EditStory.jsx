@@ -1,10 +1,14 @@
 import { useState } from "react";
 import Button from "../Components/Button";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Loading from "../Components/Loading";
+import { useDispatch } from "react-redux";
+import { editStory, deleteStory } from '../store/storiesSlice'
 
 function EditStory() {
     const { state } = useLocation();
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     const [story, setStory] = useState(state); 
 
 
@@ -12,9 +16,17 @@ function EditStory() {
         setStory(prevStory => {
             return {
                 ...prevStory,
-                [event.target.value]: event.target.value
+                [event.target.name]: event.target.value
             }
         })
+    }
+    function handleSave() {
+        dispatch(editStory(story));
+        navigate(-1);
+    }
+    function handleDelete() {
+        dispatch(deleteStory(story));
+        navigate('/');
     }
 
     return (  
@@ -24,7 +36,8 @@ function EditStory() {
                 <section className="edit-info">
                     <input type="text" value={story.title} name="title" onChange={handleChange} />
                     <textarea value={story.story} name="story" onChange={handleChange} />
-                    <Button children={'Save'} type={'save'} />
+                    <Button children={'Delete'} type={'delete'} onClick={handleDelete}/>
+                    <Button children={'Save'} type={'save'} onClick={handleSave}/>
                 </section>
                 : <Loading />
             }
