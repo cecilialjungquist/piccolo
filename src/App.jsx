@@ -7,26 +7,24 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 function App() {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const response = await fetch('/data.json');
+  async function fetchData() {
+    try {
+      const response = await fetch('/data.json');
 
-        if (response.status === 200) {
-          const data = await response.json();
-          dispatch(setStories(data.stories));
-        } else {
-          throw new Error('Could not fetch data.');
-        }
-      } catch (error) {
-        console.log(error);
+      if (response.status === 200) {
+        const data = await response.json();
+        dispatch(setStories(data.stories));
+      } else {
+        throw new Error('Could not fetch data.');
       }
+    } catch (error) {
+      console.log(error);
     }
+  }
 
+  useEffect(() => {
     fetchData();
-
   }, [dispatch])
-
 
   return (
     <>
