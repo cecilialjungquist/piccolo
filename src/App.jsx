@@ -3,8 +3,6 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setStories } from './store/storiesSlice';
 import { Link, NavLink, Outlet } from "react-router-dom";
-// import EditStory from './views/EditStory';
-// import Login from './views/Login';
 
 function App() {
   const dispatch = useDispatch();

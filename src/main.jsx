@@ -13,9 +13,6 @@ import PostStory from './views/PostStory.jsx';
 import EditStory from './views/EditStory.jsx';
 import ErrorScreen from './views/ErrorScreen.jsx';
 
-
-// Hur frå jag med min login?
-
 const router = createBrowserRouter([
   {
     path: '/',
