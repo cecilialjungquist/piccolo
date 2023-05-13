@@ -1,5 +1,5 @@
 import './Loading.css';
-import loadingGIF from '/loading.gif';
+import loadingGIF from '../assets/loading.gif';
 
 function Loading() {
     return (  

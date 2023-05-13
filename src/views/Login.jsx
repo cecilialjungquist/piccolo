@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import loadingGIF from '/public/loading.gif';
+import loadingGIF from '../assets/loading.gif';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
