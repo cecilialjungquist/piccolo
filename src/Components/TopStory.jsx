@@ -1,7 +1,6 @@
 import './TopStory.css';
 
 function TopStory({ topStory }) {
-
     const styles = {
         backgroundImage: `url(${topStory.imageUrl})`
     }

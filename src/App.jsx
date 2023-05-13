@@ -31,11 +31,11 @@ function App() {
       <header className="layout-header">
         <aside>
           <Link to='/home'>
-            <svg width="29" height="15" viewBox="0 0 29 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.5 0L23 15H0L11.5 0Z" fill="#DFDFDF" />
-              <path d="M20.7942 3L28.5885 13.5H13L20.7942 3Z" fill="#DFDFDF" />
+            <svg width="22" height="28" viewBox="0 0 88 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="88" height="111" rx="6" fill="#CCCCCC" />
+              <path d="M14.4182 93.6962L35.2753 66.0246M35.2753 66.0246L68.6093 18.248C89.5 66.0246 35.2753 66.0246 35.2753 66.0246Z" stroke="#267055" strokeWidth="6" strokeLinecap="round" />
             </svg>
-            PICCOLO
+            <h2>Piccolo</h2>
           </Link>
         </aside>
         <nav>
@@ -48,7 +48,7 @@ function App() {
         <Outlet />
       </main>
       <footer>
-        <p> made by <a href="https://www.linkedin.com/in/cecilia-ljungquist/"> cecilialjungquist</a> maj 2023</p>
+        <p> made by <a href="https://www.linkedin.com/in/cecilia-ljungquist/" target='_blank'> cecilia ljungquist</a> may 2023</p>
       </footer>
     </>
   )

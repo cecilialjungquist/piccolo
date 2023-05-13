@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import Loading from "../Components/Loading";
 import { useEffect, useState } from "react";
+import Loading from "../Components/Loading";
 import Button from "../Components/Button";
 
 
@@ -9,18 +9,16 @@ function Story() {
     const id = useParams().id;
     const stories = useSelector(state => state.stories);
     const [canEdit, setCanEdit] = useState(false);
-    console.log(id);
 
     let story;
     if (stories.length > 0) {
         [ story ] = stories.filter(story => story.id === id);
-        console.log(story);
     }
 
     useEffect(() => {
-        if (story && story.username === "kyle__") {
+        // If this user is logged in, the user can edit this story
+        if (story && story.isLogged) {
             setCanEdit(true);
-            console.log('can edit')
         }
     }, [])
 

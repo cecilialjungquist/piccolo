@@ -19,18 +19,20 @@ function CardStack() {
                 return <StoryCard story={story} key={nanoid()} />
             }
         })
+    } else {
+        storyCards = <p className="message">No posts yet...</p>
     }
 
-    return (  
+    return (
         <>
-            {topStory ? 
-                <>
-                    <TopStory topStory={topStory}/>
-                    <section className="card-stack">
-                        {storyCards ? storyCards : <Loading />}
-                    </section>
-                </> : <Loading />
+            {topStory && <TopStory topStory={topStory} />}
+            {stories ?
+                <section className="card-stack">
+                    {storyCards}
+                </section> : 
+                <Loading />
             }
+
         </>
     );
 }

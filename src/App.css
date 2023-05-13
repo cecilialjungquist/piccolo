@@ -5,6 +5,12 @@
     font-family: var(--regular-font);
 }
 
+.layout-header aside a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
 .layout-header nav {
     display: flex;
     gap: 2rem;
@@ -31,6 +37,7 @@
     display: grid;
     place-content: center;
     text-align: center;
+    z-index: 1;
 }
 
 /* -.-.-.-.-.- HOME -.-.-.-.-.- */
@@ -117,7 +124,7 @@
 
 .post-story {
     min-height: 80vh;
-    margin: auto;
+    margin: 4rem auto 0;
     max-width: 700px;
 }
 

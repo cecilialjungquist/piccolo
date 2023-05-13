@@ -5,7 +5,7 @@ function Loading() {
     return (  
         <div className="loading">
             <img src={loadingGIF} />
-            <p>Loading...</p>
+            <p className='message'>Loading...</p>
         </div>
     );
 }

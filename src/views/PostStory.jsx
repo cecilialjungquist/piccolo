@@ -1,5 +1,5 @@
 import { nanoid } from "@reduxjs/toolkit";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Button from "../Components/Button";
 import { useDispatch } from "react-redux";
 import { postStory } from "../store/storiesSlice";
