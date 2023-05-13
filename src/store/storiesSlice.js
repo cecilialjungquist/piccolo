@@ -7,7 +7,6 @@ export const storiesSlice = createSlice ({
     initialState,
     reducers: {
         setStories: (state, action) => {
-            console.log('Adding stories', action.payload)
             return action.payload;
         },
         postStory: (state, action) => {
