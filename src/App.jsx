@@ -10,7 +10,7 @@ function App() {
 
   async function fetchData() {
     try {
-      const response = await fetch('/data.json');
+      const response = await fetch('data.json');
 
       if (response.status === 200) {
         const data = await response.json();
