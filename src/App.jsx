@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setStories } from './store/storiesSlice';
 import { Link, NavLink, Outlet } from "react-router-dom";
+import MobileMenu from './Components/MobileMenu';
 
 function App() {
   const dispatch = useDispatch();
@@ -38,11 +39,12 @@ function App() {
             <h2>Piccolo</h2>
           </Link>
         </aside>
-        <nav>
+        <nav className='desktop'>
           <NavLink to='/home'>Home</NavLink>
           <NavLink to='/flow'>Flow</NavLink>
           <NavLink to='/post-story'>Post Story</NavLink>
         </nav>
+        <MobileMenu />
       </header>
       <main>
         <Outlet />

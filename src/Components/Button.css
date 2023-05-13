@@ -1,7 +1,8 @@
 .primary,
 .edit,
 .save,
-.delete {
+.delete,
+.menu {
     padding: .5rem 1rem;
     border-radius: 6px;
 }
@@ -11,4 +12,8 @@
 }
 .delete {
     color: rgb(173, 40, 40)
+}
+.menu {
+    font-size: 1.2;
+    color: var(--accent-white)
 }
