@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import store from './store/store.js';
 import { Provider } from 'react-redux';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, createHashRouter, RouterProvider } from "react-router-dom";
 import App from './App.jsx';
 import Login from './views/Login.jsx';
 import Home from './views/Home.jsx';
@@ -13,7 +13,8 @@ import PostStory from './views/PostStory.jsx';
 import EditStory from './views/EditStory.jsx';
 import ErrorScreen from './views/ErrorScreen.jsx';
 
-const router = createBrowserRouter([
+// Using HashRouter for github pages
+const router = createHashRouter([
   {
     path: '/',
     element: <App />,
