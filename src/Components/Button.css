@@ -9,3 +9,6 @@
 .edit {
     align-self: flex-end;
 }
+.delete {
+    color: rgb(173, 40, 40)
+}
