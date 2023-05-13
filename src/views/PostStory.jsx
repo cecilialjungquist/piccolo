@@ -5,6 +5,7 @@ import { postStory } from "../store/storiesSlice";
 import { useNavigate } from "react-router-dom";
 import { useValidateImageURL } from "use-validate-image-url";
 import Button from "../Components/Button";
+import GoBackBtn from "../Components/GoBackBtn";
 
 function PostStory() {
     const dispatch = useDispatch();
@@ -32,7 +33,7 @@ function PostStory() {
     function handleSave() {
         if (newStory.title && newStory.story.length > 150 && status === "valid") {
             dispatch(postStory(newStory));
-            navigate('/home');
+            navigate('/flow');
         } else {
             setShowMessage(true);
         }
@@ -53,6 +54,7 @@ function PostStory() {
                 </section>
                 <Button children={'Save'} type={'save'} onClick={handleSave} />
             </section>
+            <GoBackBtn />
         </section>
     );
 }

@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Loading from "../Components/Loading";
 import Button from "../Components/Button";
+import GoBackBtn from "../Components/GoBackBtn";
 
 
 function Story() {
@@ -12,7 +13,7 @@ function Story() {
 
     let story;
     if (stories.length > 0) {
-        [ story ] = stories.filter(story => story.id === id);
+        [story] = stories.filter(story => story.id === id);
     }
 
     useEffect(() => {
@@ -25,21 +26,24 @@ function Story() {
     return (
         <>
             {story ?
-                <section className="story">
-                    <section className="text">
-                        <h1>{story.title}</h1>
-                        <p>{story.story}</p>
-                        <p>written by <span>{story.username}</span></p>
-                        {canEdit &&
-                            <Link to='/edit-story' state={story}>
-                                <Button children={'Edit'} type={'edit'} />
-                            </Link>
-                        }
+                <>
+                    <section className="story">
+                        <section className="text">
+                            <h1>{story.title}</h1>
+                            <p>{story.story}</p>
+                            <p>written by <span>{story.username}</span></p>
+                            {canEdit &&
+                                <Link to='/edit-story' state={story}>
+                                    <Button children={'Edit'} type={'edit'} />
+                                </Link>
+                            }
+                        </section>
+                        <section className="img">
+                            <img src={story.imageUrl}></img>
+                        </section>
                     </section>
-                    <section className="img">
-                        <img src={story.imageUrl}></img>
-                    </section>
-                </section> :
+                    <GoBackBtn />
+                </> :
                 <Loading />
             }
         </>

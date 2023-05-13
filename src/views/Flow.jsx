@@ -1,4 +1,5 @@
 import CardStack from "../Components/CardStack";
+import GoBackBtn from "../Components/GoBackBtn";
 
 function Flow() {
 
@@ -12,6 +13,7 @@ function Flow() {
             <section>
                 <CardStack />
             </section>
+            <GoBackBtn />
         </section>
     );
 }

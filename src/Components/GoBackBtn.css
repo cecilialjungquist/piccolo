@@ -1,0 +1,15 @@
+.go-back-btn {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-content: center;
+    margin-left: 2rem;
+}
+.go-back-btn svg {
+    margin-right: 5px;
+}
+.go-back-btn:hover {
+    border: 1px solid var(--accent-white);
+}

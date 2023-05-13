@@ -1,4 +1,4 @@
-.top-story {
+.top-story  {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 2fr;
@@ -22,6 +22,11 @@
     height: 100%;
     background-size: cover;
     background-position: center center;
+}
+
+/* Overrides default in index.css */
+.top-story-link:hover {
+    opacity: 1;
 }
 
 @media screen and (min-width: 650px) {
