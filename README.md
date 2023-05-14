@@ -1,5 +1,7 @@
 # React JS Vite, Redux TK, Routing
 
+https://cecilialjungquist.github.io/piccolo/
+
 ## Idé
 Jag ville skapa ett sidoprojekt för att lära mig mer om ovanstående ramverk. 
 Jag började med en simpel figma-skiss, sedan skapade jag en json fil som innehöll det jag behövde för applikationen.
