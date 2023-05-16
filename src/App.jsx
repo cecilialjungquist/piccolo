@@ -2,11 +2,12 @@ import './App.css';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setStories } from './store/storiesSlice';
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet, useParams } from "react-router-dom";
 import MobileMenu from './Components/MobileMenu';
 
 function App() {
   const dispatch = useDispatch();
+  const params = useParams();
 
   async function fetchData() {
     try {
@@ -25,7 +26,11 @@ function App() {
 
   useEffect(() => {
     fetchData();
-  }, [dispatch])
+  }, [dispatch]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [params])
 
   return (
     <>
