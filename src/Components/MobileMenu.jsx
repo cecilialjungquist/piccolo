@@ -12,7 +12,7 @@ function MobileMenu() {
 
     return (
         <nav className="mobile-menu">
-            <Button children={'Menu'} type={'menu'} onClick={toggleMenu} />
+            <Button type={'menu'} onClick={toggleMenu}>Menu</Button>
             {showOptions &&
                 <section className="options">
                     <NavLink onClick={toggleMenu} to='/home'>Home</NavLink>

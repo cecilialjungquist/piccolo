@@ -13,7 +13,7 @@ export default function ErrorPage() {
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
-      <Button children={'Go to homepage'} type={'primary'} onClick={() => navigate('/home')} />
+      <Button type={'primary'} onClick={() => navigate('/home')}>Go to homepage</Button>
     </section>
   );
 }

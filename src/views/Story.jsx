@@ -34,7 +34,7 @@ function Story() {
                             <p>written by <span>{story.username}</span></p>
                             {canEdit &&
                                 <Link to='/edit-story' state={story}>
-                                    <Button children={'Edit'} type={'edit'} />
+                                    <Button type={'edit'}>Edit</Button>
                                 </Link>
                             }
                         </section>
