@@ -36,8 +36,8 @@ function EditStory() {
                 <section className="edit-info">
                     <input type="text" value={story.title} name="title" onChange={handleChange} />
                     <textarea value={story.story} name="story" onChange={handleChange} />
-                    <Button children={'Delete'} type={'delete'} onClick={handleDelete}/>
-                    <Button children={'Save'} type={'save'} onClick={handleSave}/>
+                    <Button type={'delete'} onClick={handleDelete}>Delete</Button>
+                    <Button type={'save'} onClick={handleSave}>Save</Button>
                 </section>
                 : <Loading />
             }

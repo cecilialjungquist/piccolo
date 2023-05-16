@@ -52,7 +52,7 @@ function PostStory() {
                     <textarea value={newStory.story} name="story" onChange={handleChange} placeholder="Write your story here" />
                     <input type="url" value={newStory.imageUrl} name="imageUrl" onChange={handleChange} placeholder="Please share image url here" />
                 </section>
-                <Button children={'Save'} type={'save'} onClick={handleSave} />
+                <Button type={'save'} onClick={handleSave}>Save</Button>
             </section>
             <GoBackBtn />
         </section>
